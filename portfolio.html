@@ -21,42 +21,41 @@
     <title>Портфолио</title>
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <a href="./index.html" class="logo-header"
-          ><span class="logo-web">Web</span>Studio</a
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="logo logo--header"
+          ><span class="logo__header-style">Web</span>Studio</a
         >
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link animation-link"> Студия</a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="./portfolio.html"
-                class="nav-link current animation-link"
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link nav__link--animation">
+                Студия</a
               >
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link current nav__link--animation">
                 Портфолио</a
               >
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link animation-link">Контакты</a>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--animation">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list">
-          <li class="contacts-item">
+        <ul class="contacts-list"> 
+          <li class="contacts-list__item">
             <a
               href="mailto:info@devstudio.com"
-              class="contacts-link animation-link"
-              ><svg class="contact-icon" width="16px" height="12px">
+              class="contacts-list__link contacts-list__link--animation"
+              ><svg class="contacts-list__icon" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-link animation-link"
-              ><svg class="contact-icon" width="10px" height="16px">
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="contacts-list__link contacts-list__link--animation"
+              ><svg class="contacts-list__icon" width="10px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +380961111111</a
@@ -272,25 +271,25 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-container-adress">
-          <a href="./index.html" class="logo-footer"
-            ><span class="logo-web">Web</span>Studio</a
+      <div class="container footer__container">
+        <div class="footer__div">
+          <a href="./index.html" class="logo logo--footer"
+            ><span class="logo__footer-style">Web</span>Studio</a
           >
-          <address class="address-footer">
-            <p class="addres-footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="address">
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
-              <li class="footer-contacts-item">
+              <li class="address__item">
                 <a
                   href="mailto:info@example.com"
-                  class="footer-contacts-link animation-link"
+                  class="address__link adress__link--animation"
                   >info@example.com</a
                 >
               </li>
               <li>
                 <a
                   href="tel:+380991111111"
-                  class="footer-contacts-link animation-link"
+                  class="address__link adress__link--animation"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -298,12 +297,12 @@
           </address>
         </div>
         <div>
-          <p class="footer-cocial-text">Присоединяйтесь</p>
-          <ul class="footer-cocial-icon-list">
-            <li class="footer-cocial-icon-item">
-              <a href="#" class="footer-cocial-icon-link"
+          <p class="footer__text">Присоединяйтесь</p>
+          <ul class="footer__social">
+            <li class="footer__item">
+              <a href="#" class="footer__link"
                 ><svg
-                  class="footer-cocial-icon-link-svg"
+                  class="footer__icon"
                   width="20px"
                   height="20px"
                 >
@@ -312,30 +311,30 @@
                   ></use></svg
               ></a>
             </li>
-            <li class="footer-cocial-icon-item">
-              <a href="#" class="footer-cocial-icon-link"
+            <li class="footer__item">
+              <a href="#" class="footer__link"
                 ><svg
-                  class="footer-cocial-icon-link-svg"
+                  class="footer__icon"
                   width="20px"
                   height="20px"
                 >
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="footer-cocial-icon-item">
-              <a href="#" class="footer-cocial-icon-link"
+            <li class="footer__item">
+              <a href="#" class="footer__link"
                 ><svg
-                  class="footer-cocial-icon-link-svg"
+                  class="footer__icon"
                   width="20px"
                   height="20px"
                 >
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="footer-cocial-icon-item">
-              <a href="#" class="footer-cocial-icon-link"
+            <li class="footer__item">
+              <a href="#" class="footer__link"
                 ><svg
-                  class="footer-cocial-icon-link-svg"
+                  class="footer__icon"
                   width="20px"
                   height="20px"
                 >
@@ -346,10 +345,10 @@
         </div>
         <form class="footer-form">
           <div>
-          <p class="footer-email-text">Подпишитесь на рассылку</p>
+          <p class="footer-form__text">Подпишитесь на рассылку</p>
           <label>
             <input
-              class="footer-email-input"
+              class="footer-form__input"
               type="email"
               name="email"
               placeholder="Email"
@@ -357,9 +356,9 @@
             />
           </label>
         </div>
-          <button class="footer-btn-submit" type="submit">
+          <button class="footer-form__btn" type="submit">
             Подписаться
-            <svg class="footer-btn-icon" width="24px" height="24px">
+            <svg class="footer-form__icon" width="24px" height="24px">
               <use href="./images/symbol-defs.svg#icon-icon-send"></use>
             </svg>
           </button>

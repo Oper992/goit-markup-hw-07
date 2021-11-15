@@ -7,9 +7,10 @@
   display: flex;
   align-items: center;
 }
-.header__logo {
+.logo--header {
   margin-right: 93px;
   padding: 24px 0 25px 0;
+  color: var(--black-text-color);
 }
 .logo__header-style {
   color: var(--blue-color);
